@@ -1,4 +1,5 @@
 <?php
+phpinfo();
 
 if(!$_POST) exit;
 
@@ -35,6 +36,13 @@ if(trim($subject) == '') {
 
 if(get_magic_quotes_gpc()) {
 	$comments = stripslashes($comments);
+}
+{
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.4.0"
+    }
+  }
 }
 
 
