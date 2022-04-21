@@ -37,6 +37,7 @@ if(trim($subject) == '') {
 if(get_magic_quotes_gpc()) {
 	$comments = stripslashes($comments);
 }
+
 {
   "functions": {
     "api/*.php": {
